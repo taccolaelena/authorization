@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+}
 
+main {
+  display: grid;
+  grid-template-columns: 8px 30% 1fr;
+  height: 100vw;
+}
+
+.yellow-area {
+  background-color: #ffe01b;
+}
+
+.report-area {
+  background-image: url("../img/big background.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% auto;
+}
 
 /*# sourceMappingURL=styles.css.map */

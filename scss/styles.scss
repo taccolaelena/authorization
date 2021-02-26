@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 8px 30% 1fr;
+    // justify-items: stretch;
+    height: 100vw;
+    }
+
+
+.yellow-area {
+        
+    background-color: rgb(255,224,27);
+    }
+
+
+
+.report-area {
+    background-image: url("../img/big background.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% auto;
+}
