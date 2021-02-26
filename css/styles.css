@@ -4,8 +4,8 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 8px 30% 1fr;
-  height: 100vw;
+  grid-template-columns: 8px 33.5% 1fr;
+  height: 100vh;
 }
 
 .yellow-area {
@@ -15,8 +15,9 @@ main {
 .report-area {
   background-image: url("../img/big background.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% auto;
+  background-size: cover;
+  height: 100%;
+  background-position: 50% 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
