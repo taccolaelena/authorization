@@ -13,10 +13,16 @@ main {
   background-color: #ffe01b;
 }
 
+.login-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 12px;
+}
+
 img {
   height: 38px;
   width: 38px;
-  margin: 12px;
 }
 
 h1 {
@@ -31,10 +37,38 @@ a:hover {
   color: #006570;
 }
 
-.login-title {
+label {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+label p {
+  font-weight: bold;
+}
+
+input {
+  height: 3em;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.box-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.box-element button {
+  margin-top: 3em;
+  line-height: 3em;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007c89;
+  border: 1px solid #007c89;
+  border-radius: 3px;
 }
 
 .report-area {
@@ -43,6 +77,10 @@ a:hover {
   background-size: cover;
   height: 100%;
   background-position: 50% 0;
+}
+
+.report {
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,12 +14,19 @@ main {
 .yellow-area {
     background-color: rgb(255,224,27);
     }
-.login-area {}
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+
 
     img {
         height: 38px;
         width: 38px;
-        margin: 12px;
+        // padding: 12px;
     }
 
     h1 {
@@ -34,12 +41,40 @@ main {
         color: #006570;
     }
 
-    .login-title{
+    label {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
+        label p {
+            font-weight: bold;
+        }
+
+        input   {
+            height: 3em;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+        
+    .box-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .box-element button {
+        margin-top: 3em;
+        line-height: 3em;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(0,124,137);
+        border: 1px solid rgb(0,124,137);
+        border-radius: 3px;
+    }
+    
 
 
 .report-area {
@@ -49,3 +84,8 @@ main {
     height: 100%;
     background-position: 50% 0;
 }
+
+    .report {
+        line-height: 24px;
+        }
+
