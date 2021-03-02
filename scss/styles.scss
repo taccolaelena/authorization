@@ -14,10 +14,13 @@ main {
     background-color: rgb(255,224,27);
     }
 
-.login-area {
+.login-wrapper {
+    height: 100%;
     display: grid;
-    grid-template-rows: 62px 1fr 8%;
+    grid-template-rows: 62px 1fr 5%;
 }
+
+
 
     img {
         height: 38px;
@@ -29,12 +32,16 @@ main {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    a {
+    .box-element a, .login-content a {
         color: #007C89
     }
 
-    a:hover {
+    .box-element a:hover, .login-content a:hover, .login-copyright a:hover {
         color: #006570;
+    }
+
+    .login-copyright a {
+        color: gray;
     }
 
     .login-content {
@@ -58,19 +65,29 @@ main {
         input   {
             height: 3em;
             border: 1px solid lightgrey;
-            border-radius: 3px;
+            border-radius: 2px;
+        }
+
+        .username:focus, .password-area:focus, .button-login:hover   {
+            // border: 1px solid #007C89;
         }
         
 
-    .box-element button {
+    .button-login {
         margin-top: 3em;
         line-height: 3em;
         font-size: 16px;
         font-weight: bold;
         color: white;
-        background-color: rgb(0,124,137);
-        border: 1px solid rgb(0,124,137);
-        border-radius: 3px;
+        background-color: #007C89;
+        border: 1px solid #007C89;
+        border-radius: 2px;
+    }
+
+    .button-login:hover {
+        background-color: #006570;
+        border: 1px solid #006570;
+        cursor: pointer;
     }
     
     .keep-login label {
@@ -79,8 +96,8 @@ main {
     }
 
     .checkbox {
-        height: 25px;
-        width: 25px;
+        height: 1em;
+        display: none;
     }
 
     .keep-login, .forgot {
@@ -88,6 +105,13 @@ main {
         line-height: 3em;
         text-align: center;
     }
+
+    .login-copyright {
+        margin: 12px;
+        font-size: 12px;
+        color: gray;
+    }
+
 
 
 
@@ -97,9 +121,31 @@ main {
     background-size: cover;
     height: 100%;
     background-position: 50% 0;
+    position: relative;
 }
 
     .report {
         line-height: 24px;
-        }
+        position: absolute;
+        top: 71%;
+        left: 15%;
+        right: 50%;
+        width: 70%;
+        text-align: center;
+    }
 
+
+    .button-report {
+        font-weight: bolder;
+        border: 2px solid black;
+        padding: 1px 20px;
+        background: rgba(0, 0, 0, 0);
+        font-size: 14px;
+    }
+
+    .button-report:hover {
+        // background: rgba(253, 253, 253, 0.5);
+        cursor: pointer;
+        color: rgb(74,67,75);
+        border: 2px solid rgb(74,67,75);
+    }
