@@ -6,7 +6,6 @@ body {
 main {
     display: grid;
     grid-template-columns: 8px 33.5% 1fr;
-    // justify-items: stretch;
     height: 100vh;
     }
 
@@ -14,19 +13,16 @@ main {
 .yellow-area {
     background-color: rgb(255,224,27);
     }
+
 .login-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 12px 14.8%;
+    display: grid;
+    grid-template-rows: 62px 1fr 8%;
 }
-
-
 
     img {
         height: 38px;
         width: 38px;
-        // padding: 12px;
+        padding: 12px;
     }
 
     h1 {
@@ -41,7 +37,15 @@ main {
         color: #006570;
     }
 
-    label {
+    .login-content {
+        margin: 0 14.8%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .login label, .password label, .submit {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -57,12 +61,6 @@ main {
             border-radius: 3px;
         }
         
-    .box-element {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-    }
 
     .box-element button {
         margin-top: 3em;
@@ -75,6 +73,22 @@ main {
         border-radius: 3px;
     }
     
+    .keep-login label {
+        font-weight: bold;
+        line-height: 1em;
+    }
+
+    .checkbox {
+        height: 25px;
+        width: 25px;
+    }
+
+    .keep-login, .forgot {
+        margin-top: 1em;
+        line-height: 3em;
+        text-align: center;
+    }
+
 
 
 .report-area {
