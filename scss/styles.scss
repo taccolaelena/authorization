@@ -5,7 +5,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 8px 33.5% 1fr;
+    grid-template-columns: 8px 33.55% 1fr;
     height: 100vh;
     }
 
@@ -17,7 +17,7 @@ main {
 .login-wrapper {
     height: 100%;
     display: grid;
-    grid-template-rows: 62px 1fr 5%;
+    grid-template-rows: 62px 1fr 5.8%;
 }
 
 
@@ -30,6 +30,8 @@ main {
 
     h1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3em;
+        margin-bottom: 0;
     }
 
     .box-element a, .login-content a {
@@ -45,7 +47,7 @@ main {
     }
 
     .login-content {
-        margin: 0 14.8%;
+        margin: 0 14.8% 13%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -89,11 +91,7 @@ main {
         border: 1px solid #006570;
         cursor: pointer;
     }
-    
-    .keep-login {
-        // font-weight: bold;
-        // line-height: 1em;
-    }
+
 
     .checkbox {
         position: absolute;
@@ -107,6 +105,7 @@ main {
         user-select: none;
         font-weight: bolder;
         }
+
     .checkbox+label::before {
         content: '';
         display: inline-block;
@@ -188,24 +187,28 @@ main {
     .report {
         line-height: 24px;
         position: absolute;
-        top: 71%;
+        top: 74.9%;
         left: 15%;
         right: 50%;
         width: 70%;
         text-align: center;
     }
 
+    h2 {
+        font-size: 1.2em;
+        line-height: 0.8em;
+    }
+
 
     .button-report {
         font-weight: bolder;
         border: 2px solid black;
-        padding: 1px 20px;
+        padding: 0 21px;
         background: rgba(0, 0, 0, 0);
-        font-size: 14px;
+        font-size: 0.88em;
     }
 
     .button-report:hover {
-        // background: rgba(253, 253, 253, 0.5);
         cursor: pointer;
         color: rgb(74,67,75);
         border: 2px solid rgb(74,67,75);
